@@ -76,7 +76,7 @@ namespace WindowsFormsApp3.Forms
             MessageBox.Show("save Successfully", "Great", MessageBoxButtons.OK, MessageBoxIcon.Information);
             LoadPatient();
         }
-
+        //abqwertyuiasdfghj
         private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
