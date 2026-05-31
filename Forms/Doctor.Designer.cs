@@ -232,9 +232,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.LightGray;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(337, 135);
+            this.panel1.Location = new System.Drawing.Point(335, 135);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(698, 512);
+            this.panel1.Size = new System.Drawing.Size(700, 512);
             this.panel1.TabIndex = 32;
             // 
             // panel2
@@ -262,6 +262,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(632, 592);
             this.panel2.TabIndex = 23;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // button5
             // 
@@ -342,6 +343,15 @@
             // cmbBg
             // 
             this.cmbBg.FormattingEnabled = true;
+            this.cmbBg.Items.AddRange(new object[] {
+            "A+",
+            "B+",
+            "O+",
+            "AB+",
+            "A-",
+            "B-",
+            "O-",
+            "AB-"});
             this.cmbBg.Location = new System.Drawing.Point(182, 485);
             this.cmbBg.Name = "cmbBg";
             this.cmbBg.Size = new System.Drawing.Size(423, 28);
